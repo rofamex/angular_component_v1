@@ -1,0 +1,11 @@
+<div class="box" [ngStyle]="{'border-color': borderColor}">
+    <div class="title">
+        {{title}}
+    </div>
+</div>
+
+<div>
+    Parent Email Body is {{emailBodyParent}}
+</div>
+
+<app-child1 (emailBodyEmmiter)="onChangeEmailBodyParent($event)"></app-child1>
